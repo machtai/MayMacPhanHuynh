@@ -1,0 +1,24 @@
+/* ProductCard.css */
+
+.zoom-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+
+
+  .custom-typography {
+    text-align: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .setPCard {
+    padding: 7% !important;
+  }
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { Navbar } from './components/Navbar/Navbar';
+import { CarouselDefault } from "./components/Swip/CarouselDefault";
+import Reason from "./components/Reason/ListReason";
+import ProductCardGrid from "./components/ListProducts/ListProduct";
+import ColumnContact from './components/ColumnContact/ColumnContact';
+import ImgFreeShip from './components/ImgFreeShip/ImgFreeShip';
+import PartnerSwiper from './components/partner/PartnerSwipers';
+import Location from './components/Map/Map';
+import NewsPage from './components/News/NewsPage';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App overflow-x-hidden bg-white">
+    <Navbar />
+    <CarouselDefault />
+    <ProductCardGrid />
+    <Reason />
+   <ImgFreeShip/>
+   <Location/>
+    <PartnerSwiper/>
+  <NewsPage/>
+    <Footer/>
+    
+    
+    <ColumnContact />
     </div>
   );
 }
